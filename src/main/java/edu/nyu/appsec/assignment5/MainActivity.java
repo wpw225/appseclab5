@@ -110,11 +110,11 @@ public class MainActivity extends AppCompatActivity {
         WebSettings settings = view.getSettings();
         //Sets whether JavaScript running in the context of a file scheme URL should be allowed to access content from other file scheme URLs.
         //To enable the most restrictive, and therefore secure, policy this setting should be disabled.
-       // settings.setAllowFileAccessFromFileURLs(true);
+        settings.setAllowFileAccessFromFileURLs(true);
         //Tells the WebView to enable JavaScript execution. The default is false.
-        //settings.setJavaScriptEnabled(true);
+        settings.setJavaScriptEnabled(true);
         //Sets whether JavaScript running in the context of a file scheme URL should be allowed to access content from any origin.
-        //settings.setAllowUniversalAccessFromFileURLs(true);
+        settings.setAllowUniversalAccessFromFileURLs(true);
 /*
         //LocationManager is the main class through which your application can access location services on Android.
         LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
